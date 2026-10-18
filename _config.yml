@@ -1,0 +1,37 @@
+title: Paolo Bussacchini
+email: ""
+description: >-
+  Appunti di platform engineering, homelab e percorso di apprendimento.
+  Sito personale e blog.
+baseurl: ""
+url: "https://paolobussacchini.it"
+lang: it
+
+twitter_username: ""
+github_username: paolobussacchini
+
+# Build
+markdown: kramdown
+theme: minima
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+minima:
+  skin: auto
+  social_links:
+    - title: GitHub
+      icon: github
+      url: "https://github.com/paolobussacchini"
+
+header_pages:
+  - about.md
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
+  - README.md
+  - .gitignore

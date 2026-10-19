@@ -56,7 +56,7 @@ First write-up: [Starting an SRE lab](/2026/10/18/starting-an-sre-lab/) · [All 
 Notes from labs and learning.
 
 {% for post in site.posts limit:3 %}
-- **[{{ post.title }}]({{ post.url · relative_url }})** - {{ post.date · date: "%b %-d, %Y" }}
+- **[{{ post.title }}]({{ post.url | relative_url }})** · {{ post.date | date: "%b %d, %Y" }}
 {% endfor %}
 
 [Browse all posts ->](/blog/)

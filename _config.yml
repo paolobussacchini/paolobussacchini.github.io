@@ -1,22 +1,18 @@
 title: Paolo Bussacchini
-email: ""
+email: paolobussacchini@gmail.com
 description: >-
-  Appunti di platform engineering, homelab e percorso di apprendimento.
-  Sito personale e blog.
+  Platform / Infrastructure Software Engineer
 baseurl: ""
 url: "https://paolobussacchini.it"
-lang: it
+lang: en
 
-twitter_username: ""
 github_username: paolobussacchini
 
-# Build
 markdown: kramdown
 theme: minima
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
-  - jekyll-sitemap
 
 minima:
   skin: auto
@@ -24,9 +20,13 @@ minima:
     - title: GitHub
       icon: github
       url: "https://github.com/paolobussacchini"
+    - title: LinkedIn
+      icon: linkedin
+      url: "https://www.linkedin.com/in/paolo-bussacchini"
 
 header_pages:
   - about.md
+  - blog.md
 
 exclude:
   - Gemfile

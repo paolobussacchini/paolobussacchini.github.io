@@ -1,0 +1,14 @@
+services:
+  site:
+    image: jekyll/jekyll:4
+    mem_limit: 4g
+    command: >-
+      bash -c "bundle install && jekyll serve --host 0.0.0.0 -w --port 4000 --force_polling"
+    ports:
+      - "4000:4000"
+    volumes:
+      - .:/srv/jekyll
+    environment:
+      JEKYLL_ENV: development
+      BUNDLE_JOBS: "1"
+      BUNDLE_RETRY: "3"
